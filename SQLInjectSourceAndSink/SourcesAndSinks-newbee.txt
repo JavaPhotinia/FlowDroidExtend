@@ -1,0 +1,53 @@
+<java.util.Map: java.lang.Object get(java.lang.Object)> -> _SOURCE_
+
+%<type name="infoLeak" scope="function" className="org.slf4j.Logger">.*(?i)info.*</type>
+<org.slf4j.Logger: void info(java.lang.String)> -> _SINK_
+<org.slf4j.Logger: void info(java.lang.String,java.lang.Object)> -> _SINK_
+<org.slf4j.Logger: void info(java.lang.String,java.lang.Object,java.lang.Object)> -> _SINK_
+<org.slf4j.Logger: void info(java.lang.String,java.lang.Object[])> -> _SINK_
+<org.slf4j.Logger: void info(java.lang.String,java.lang.Throwable)> -> _SINK_
+<org.slf4j.Logger: void info(org.slf4j.Marker,java.lang.String)> -> _SINK_
+<org.slf4j.Logger: void info(org.slf4j.Marker,java.lang.String,java.lang.Object)> -> _SINK_
+<org.slf4j.Logger: void info(org.slf4j.Marker,java.lang.String,java.lang.Object,java.lang.Object)> -> _SINK_
+<org.slf4j.Logger: void info(org.slf4j.Marker,java.lang.String,java.lang.Object[])> -> _SINK_
+<org.slf4j.Logger: void info(org.slf4j.Marker,java.lang.String,java.lang.Throwable)> -> _SINK_
+
+%<type name="infoLeak" scope="function" className="org.slf4j.Logger">.*(?i)debug.*</type>
+<org.slf4j.Logger: void debug(java.lang.String)> -> _SINK_
+<org.slf4j.Logger: void debug(java.lang.String,java.lang.Object)> -> _SINK_
+<org.slf4j.Logger: void debug(java.lang.String,java.lang.Object,java.lang.Object)> -> _SINK_
+<org.slf4j.Logger: void debug(java.lang.String,java.lang.Object[])> -> _SINK_
+<org.slf4j.Logger: void debug(java.lang.String,java.lang.Throwable)> -> _SINK_
+<org.slf4j.Logger: void debug(org.slf4j.Marker,java.lang.String)> -> _SINK_
+<org.slf4j.Logger: void debug(org.slf4j.Marker,java.lang.String,java.lang.Object)> -> _SINK_
+<org.slf4j.Logger: void debug(org.slf4j.Marker,java.lang.String,java.lang.Object,java.lang.Object)> -> _SINK_
+<org.slf4j.Logger: void debug(org.slf4j.Marker,java.lang.String,java.lang.Object[])> -> _SINK_
+<org.slf4j.Logger: void debug(org.slf4j.Marker,java.lang.String,java.lang.Throwable)> -> _SINK_
+
+%<type name="infoLeak" scope="function" className="org.slf4j.Logger">.*(?i)warn.*</type>
+<org.slf4j.Logger: void warn(java.lang.String)> -> _SINK_
+<org.slf4j.Logger: void warn(java.lang.String,java.lang.Object)> -> _SINK_
+<org.slf4j.Logger: void warn(java.lang.String,java.lang.Object,java.lang.Object)> -> _SINK_
+<org.slf4j.Logger: void warn(java.lang.String,java.lang.Object[])> -> _SINK_
+<org.slf4j.Logger: void warn(java.lang.String,java.lang.Throwable)> -> _SINK_
+<org.slf4j.Logger: void warn(org.slf4j.Marker,java.lang.String)> -> _SINK_
+<org.slf4j.Logger: void warn(org.slf4j.Marker,java.lang.String,java.lang.Object)> -> _SINK_
+<org.slf4j.Logger: void warn(org.slf4j.Marker,java.lang.String,java.lang.Object,java.lang.Object)> -> _SINK_
+<org.slf4j.Logger: void warn(org.slf4j.Marker,java.lang.String,java.lang.Object[])> -> _SINK_
+<org.slf4j.Logger: void warn(org.slf4j.Marker,java.lang.String,java.lang.Throwable)> -> _SINK_
+
+%<type name="infoLeak" scope="function" className="org.slf4j.Logger">.*(?i)error.*</type>
+<org.slf4j.Logger: void error(java.lang.String)> -> _SINK_
+<org.slf4j.Logger: void error(java.lang.String,java.lang.Object)> -> _SINK_
+<org.slf4j.Logger: void error(java.lang.String,java.lang.Object,java.lang.Object)> -> _SINK_
+<org.slf4j.Logger: void error(java.lang.String,java.lang.Object[])> -> _SINK_
+<org.slf4j.Logger: void error(java.lang.String,java.lang.Throwable)> -> _SINK_
+<org.slf4j.Logger: void error(org.slf4j.Marker,java.lang.String)> -> _SINK_
+<org.slf4j.Logger: void error(org.slf4j.Marker,java.lang.String,java.lang.Object)> -> _SINK_
+<org.slf4j.Logger: void error(org.slf4j.Marker,java.lang.String,java.lang.Object,java.lang.Object)> -> _SINK_
+<org.slf4j.Logger: void error(org.slf4j.Marker,java.lang.String,java.lang.Object[])> -> _SINK_
+<org.slf4j.Logger: void error(org.slf4j.Marker,java.lang.String,java.lang.Throwable)> -> _SINK_
+<org.apache.logging.log4j.Logger: void error(java.lang.String,java.lang.Object,java.lang.Object)> -> _SINK_
+
+<javax.servlet.http.HttpServletRequest: java.lang.String getRequestURI()> -> _SINK_
+<javax.servlet.http.HttpServletRequest: java.lang.StringBuffer getRequestURL()> -> _SINK_
